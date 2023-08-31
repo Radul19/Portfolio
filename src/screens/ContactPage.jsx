@@ -1,8 +1,7 @@
 import { useMotionValue, useTransform, motion, animate } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import { interpolate } from "flubber";
 import "../sass/contact.sass";
-import { useEffect } from "react";
 
 const iconHand = `M232 206c5 0 9-5 9-10 0-6-5-10-10-10h-60c-6 0-11-6-11-13s5-12 11-12h143c5 0 9-3 10-8 1-7-3-12-9-12H149c-5 0-9-3-11-8s-1-10 2-14l46-48c3-4 3-10 0-14-5-5-11-5-19-1l-77 53h-1l-59 35c-3 2-5 5-5 9v116c0 4 3 8 7 9l49 13c12 4 25 5 37 5h98c5 0 10-3 10-8 2-6-3-12-9-12h-46c-6 0-11-6-11-12 0-7 5-13 11-13h59a10 10 0 0 0 11-8c1-6-4-12-10-12h-60c-6 0-11-6-11-13 0-6 5-12 11-12h61Z`;
 const iconLinkedin = `M73 51c0 20-17 36-37 36S0 71 0 51s16-36 36-36 37 16 37 36Zm0 66H0v233h73V117Zm116 0h-72v233h72V228c0-69 88-74 88 0v122h73V202c0-115-130-110-161-54v-31Z`;
@@ -49,7 +48,7 @@ function Contact() {
   const ani = (position) => {
     fill.set("#1e1e1e");
     stroke.set("#eee");
-    let a = animate(progress, position, {
+    animate(progress, position, {
       duration: 0.2,
       onComplete: () => {
         fill.set("#eee");

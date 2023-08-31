@@ -33,49 +33,6 @@ function PortfolioPage() {
 
 export default PortfolioPage;
 
-const Corners = () => {
-  return (
-    <>
-      <div className="corner1">
-        <svg width={40} height={40} fill="#eee">
-          <path
-            d="M 0 0 L 40 0 L 0 40 L 0 0"
-            stroke="#D9D9D9"
-            strokeWidth={2}
-          />
-        </svg>
-      </div>
-      <div className="corner2">
-        <svg width={40} height={40} fill="#eee">
-          <path
-            d="M 0 0 L 40 40 L 40 0 L 0 0"
-            stroke="#D9D9D9"
-            strokeWidth={2}
-          />
-        </svg>
-      </div>
-      <div className="corner3">
-        <svg width={40} height={40} fill="#eee">
-          <path
-            d="M 40 0 L 40 40 L 0 40 L 40 0"
-            stroke="#D9D9D9"
-            strokeWidth={2}
-          />
-        </svg>
-      </div>
-      <div className="corner4">
-        <svg width={40} height={40} fill="#eee">
-          <path
-            d="M 0 0 L 40 40 L 0 40 L 0 0"
-            stroke="#D9D9D9"
-            strokeWidth={2}
-          />
-        </svg>
-      </div>
-    </>
-  );
-};
-
 const Card = ({ title, text,tags=[],img }) => {
   return (
     <div className="card">

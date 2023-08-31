@@ -5,18 +5,9 @@ import {
   useMotionValue,
   useTransform,
   animate,
-  useScroll,
 } from "framer-motion";
-import {
-  // gamepad,
-  // user,
-  // home,
-  box,
-} from "../icons/Paths";
 
 import { interpolate } from "flubber";
-import * as blobs2 from "blobs/v2";
-import fly from "../icons/fly.svg";
 import "../sass/open.sass";
 import useOnScreen from "../helpers/useOnScreen";
 
@@ -70,7 +61,7 @@ function OpenPage() {
         a.stop();
       };
     }
-  }, [paths, isVisible]);
+  }, [paths,progress, isVisible]);
 
 
   return (

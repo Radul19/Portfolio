@@ -34,12 +34,12 @@ function PicturePage() {
     });
   };
 
-  const hideStuff = () => {
-    console.log("#hideStufs");
-    pathLen.set(0);
-    opacityPic.set(0);
-    opacity.set(0);
-  };
+  // const hideStuff = () => {
+  //   console.log("#hideStufs");
+  //   pathLen.set(0);
+  //   opacityPic.set(0);
+  //   opacity.set(0);
+  // };
 
   useEffect(() => {
     if (isVisible) {
