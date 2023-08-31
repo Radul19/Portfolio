@@ -1,94 +1,10 @@
 .root {
-  width: 100vw;
+  /* width: 100vw;
   height: 100vh;
   background-color: #191919;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: flex; */
 }
 
-/*
-.scene {
-  perspective-origin: 1em;
-  width: 100%;
-  height: 100%;
-}
-
-.xLine {
-  position: absolute;
-  width: 90vw;
-  top: calc(50vh - 10px);
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-  transform: rotateY(-89deg);
-  height: 10px;
-  left: 5vh;
-}
-.yLine{
-  position: absolute;
-  height: 90vh;
-  left: calc((50vw - 10px));
-  background:linear-gradient(#e66465, #9198e5);
-  width: 10px;
-  top: 5vh;
-} */
-.scene {
-  width: 100%;
-  height: 100%;
-  /* perspective: calc(40em); */
-  perspective: calc(100vw - 100vh);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.xAxis {
-  position: absolute;
-  width: 600px;
-  height: 10px;
-  background: linear-gradient(0.25turn, #8f7965, #822121);
-  /* transform: rotateX(80deg) rotateZ(-60deg); */
-}
-.yAxis {
-  /* transform: rotateX(80deg) rotateZ(-60deg); */
-  position: absolute;
-  height: 600px;
-  width: 10px;
-  background: linear-gradient(#59efd3, #c45ac7);
-}
-
-.orbit1 {
-  /* transform: rotateX(80deg) rotateZ(-60deg); */
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  border-width: 100%;
-  border: 10px solid white;
-  border-radius: 100%;
-}
-.orbit2 {
-  /* transform: rotateX(80deg) rotateZ(-60deg); */
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  border-width: 100%;
-  border: 10px solid white;
-  border-radius: 100%;
-}
-.orbit3 {
-  /* transform: rotateX(80deg) rotateZ(-60deg); */
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  border-width: 100%;
-  border: 10px solid white;
-  border-radius: 100%;
-}
-
-.planet1{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #3947b0;
-  border-radius: 100%;
-  transform: translateX(125px);
-}
+/* setup */
