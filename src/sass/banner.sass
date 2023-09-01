@@ -3,17 +3,18 @@
 .BannerPage
     flex: none
     scroll-snap-align: center
-    height: 100vh
+    min-height: 100vh
     width: 100%
     background-color: #1E1E1E
 
 .skl_Page
+    height: 100%
     width: 100%
-    height: 100vh
     background-color: #1e1e1e
     display: flex
     flex-direction: column
     opacity: 0
+    justify-content: space-between
     // background-color: red
 .skl_title
     color: #F2C964
@@ -23,15 +24,16 @@
     // text-align: center
 
 .skl_content
-    height: 60vh
+    margin-top: auto
     display: flex
     justify-content: center
-    // background-color: red
+    align-self: center
     padding-bottom: 5vh
     box-sizing: border-box
+    // background-color: red
 
 .skl_center
-    width: 40vw
+    max-width: 800px
     display: flex
     flex-direction: column
     // justify-content: center
@@ -129,3 +131,13 @@
     width: 100%
     height: 8px
     background-color: #f2ca64ba
+
+
+
+@media screen and (orientation:portrait)
+    .progress_bar
+        display: none
+    .skl_text
+        text-align: justify
+        font-size: 1.2rem
+

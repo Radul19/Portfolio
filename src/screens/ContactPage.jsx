@@ -24,19 +24,25 @@ function Contact() {
   );
 
   const gmailEnter = () => {
-    console.log("#gmail");
-    progress.set(0);
-    ani(1);
+    if(window.screen.width > window.screen.height){
+      console.log("#gmail");
+      progress.set(0);
+      ani(1);
+    }
   };
   const linkEnter = () => {
-    console.log("#linkedin");
-    progress.set(2);
-    ani(3);
+    if(window.screen.width > window.screen.height){
+      console.log("#linkedin");
+      progress.set(2);
+      ani(3);
+    }
   };
   const githubEnter = () => {
-    console.log("#github");
-    progress.set(4);
-    ani(5);
+    if(window.screen.width > window.screen.height){
+      console.log("#github");
+      progress.set(4);
+      ani(5);
+    }
   };
 
   const leave = () => {
@@ -74,22 +80,22 @@ function Contact() {
   return (
     <div className="Contact_page_ctn">
       <div className="Contact_page">
-        <svg
-          width="350"
-          height="350"
-          viewBox="0 0 352 402"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="svg"
-        >
-          <motion.path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d={path}
-            fill={"#eee"}
-            stroke={stroke}
-          />
-        </svg>
+        <div className="svg_ctn">
+          <svg
+            viewBox="0 0 352 402"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="svg"
+          >
+            <motion.path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d={path}
+              fill={"#eee"}
+              stroke={stroke}
+            />
+          </svg>
+        </div>
 
         <div className="info_ctn">
           <p className="info_title">Hit me up!</p>

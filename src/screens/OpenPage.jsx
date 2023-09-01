@@ -22,12 +22,12 @@ const randomLine = () => {
   //   size: 350,
   // });
   // return svgPath;
-  let p1 = `${rand(10, 75)} ${rand(10, 75)}`;
+  let p1 = `${rand(20, 75)} ${rand(20, 75)}`;
   let p2 = `${rand(125, 175)} ${rand(10, 75)}`;
   let p3 = `${rand(225, 290)} ${rand(10, 75)}`;
   let p4 = `${rand(225, 290)} ${rand(225, 290)}`;
   let p5 = `${rand(125, 175)} ${rand(225, 290)}`;
-  let p6 = `${rand(10, 75)} ${rand(225, 300)}`;
+  let p6 = `${rand(20, 75)} ${rand(225, 300)}`;
 
   return `M ${p1} L ${p2} L ${p3} L ${p4} L ${p5} L ${p6} L ${p1} `;
   // return `M 10 10 L 150 75 L 250 75 L 250 250 L 150 250 L 50 250 L 10 10 `;
@@ -77,8 +77,8 @@ function OpenPage() {
         <div className="box_x">
           <svg
             className="abs_svg"
-            width="500"
-            height="500"
+            // width="500"
+            // height="500"
             viewBox="0 0 500 500"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -91,10 +91,11 @@ function OpenPage() {
           </svg>
 
           <div className="ins_box">
-            <svg width="300" height="300" className="abs_svg2">
+            <svg className="abs_svg2">
               <motion.path
                 d={path}
                 fill="#1E1E1E"
+                // stroke="#eeeeee"
                 stroke="#eeeeee00"
                 strokeLinejoin={"round"}
                 strokeWidth="5"
@@ -103,7 +104,7 @@ function OpenPage() {
           </div>
 
           <svg
-            className="abs_svg"
+            className="abs_svg3"
             width="500"
             height="500"
             viewBox="0 0 500 500"

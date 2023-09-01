@@ -4,8 +4,8 @@
 .PicturePage_ctn
     margin-top: 5vh
     flex: none
-    scroll-snap-align: center
-    height: 100vh
+    scroll-snap-align: start
+    min-height: 100vh
     width: 100%
     background-color: #1e1e1e
 
@@ -15,6 +15,8 @@
     display: flex
     align-items: center
     justify-content: center
+    flex-wrap: wrap
+    gap: calc( 2.5vw + 2.5vh )
 
 .picture
     height: 100%
@@ -27,20 +29,25 @@
     width: 100%
 
 .left
-    width: 27.5vw
-    height: 27.5vw
+    width: calc( 20vw + 20vh )
+    height: calc( 20vw + 20vh )
     position: relative
-    // background-color: red
-    margin-right: 5vw
 
 .right
+    max-width: 600px
     opacity: 0
+    display: flex
+    flex-direction: column
+    padding: 0px 2rem
+    // width: 200px
+    // width: 100%
     // padding-left: 5vw
     // height: 100vh
 
 .ptr_title
+    // width: 100%
     // margin-top: 64px
-    font-size: 48px
+    font-size: 3rem
     font-family: WorkSansSemibold
     color: #F2C964
 
@@ -52,7 +59,11 @@
 
 .ptr_text
     color: #eee
-    width: 600px
+    // width: 600px
     font-size: 16px
     line-height: 36px
     font-family: WorkSansRegular
+
+@media screen and (orientation:portrait)
+    .ptr_title,.ptr_subtitle,.ptr_text
+        text-align: center
