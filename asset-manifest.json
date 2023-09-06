@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ec8926c8.css",
-    "main.js": "/Portfolio/static/js/main.3ac6beb9.js",
+    "main.css": "/Portfolio/static/css/main.2a8453a9.css",
+    "main.js": "/Portfolio/static/js/main.884fb2d0.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Inter-Regular.ttf": "/Portfolio/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/self1.png": "/Portfolio/static/media/self1.e1b47a81c6b8394e544a.png",
     "static/media/WorkSans-SemiBold.ttf": "/Portfolio/static/media/WorkSans-SemiBold.8988ce2e3e8957a63db8.ttf",
     "static/media/WorkSans-Regular.ttf": "/Portfolio/static/media/WorkSans-Regular.ca211a55c3d9d8690c63.ttf",
     "static/media/churro.png": "/Portfolio/static/media/churro.fa19ebeaf43afb5f1723.png",
-    "static/media/testimg.png": "/Portfolio/static/media/testimg.1bdcb9d85df7f7f4d7d4.png",
     "static/media/insigns.png": "/Portfolio/static/media/insigns.537db1c64d215e18fc15.png",
     "index.html": "/Portfolio/index.html",
-    "main.ec8926c8.css.map": "/Portfolio/static/css/main.ec8926c8.css.map",
-    "main.3ac6beb9.js.map": "/Portfolio/static/js/main.3ac6beb9.js.map",
+    "main.2a8453a9.css.map": "/Portfolio/static/css/main.2a8453a9.css.map",
+    "main.884fb2d0.js.map": "/Portfolio/static/js/main.884fb2d0.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec8926c8.css",
-    "static/js/main.3ac6beb9.js"
+    "static/css/main.2a8453a9.css",
+    "static/js/main.884fb2d0.js"
   ]
 }
