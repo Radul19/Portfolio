@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import testimg from "../icons/testimg.png";
+// import testimg from "../icons/testimg.png";
+import testimg from "../icons/self1.png";
 import { animate, motion, useMotionValue, useSpring } from "framer-motion";
 import useOnScreen from "../helpers/useOnScreen";
 import "../sass/picture.sass";

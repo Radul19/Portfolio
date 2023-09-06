@@ -6,6 +6,12 @@ import BannersPage from "./screens/BannersPage";
 import PortfolioPage from "./screens/PortfolioPage";
 import Contact from "./screens/ContactPage";
 
+// const OpenPage = lazy(() => import("./screens/OpenPage"));
+// const PicturePage = lazy(() => import("./screens/PicturePage"));
+// const BannersPage = lazy(() => import("./screens/BannersPage"));
+// const PortfolioPage = lazy(() => import("./screens/PortfolioPage"));
+// const Contact = lazy(() => import("./screens/ContactPage"));
+
 function App() {
   return (
     <div className="holster">
@@ -19,5 +25,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

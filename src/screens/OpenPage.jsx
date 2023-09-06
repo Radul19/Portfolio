@@ -41,7 +41,7 @@ function OpenPage() {
   const progress = useMotionValue(0);
   const path = useTransform(progress, [0, 1], paths, {
     mixer: (a, b) => {
-      return interpolate(a, b, { maxSegmentLength: 1 });
+      return interpolate(a, b, { maxSegmentLength: 10 });
     },
   });
   useEffect(() => {

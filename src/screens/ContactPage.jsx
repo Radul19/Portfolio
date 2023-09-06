@@ -10,7 +10,6 @@ const iconGithub = `M175 0a175 175 0 0 0-55 341c8 2 11-4 11-8v-33c-48 11-59-21-5
 
 function Contact() {
   const progress = useMotionValue(0);
-  const fill = useMotionValue("#eee");
   const stroke = useMotionValue("#1e1e1e");
   const path = useTransform(
     progress,
@@ -18,7 +17,7 @@ function Contact() {
     [iconHand, iconGmail, iconHand, iconLinkedin, iconHand, iconGithub],
     {
       mixer: (a, b) => {
-        return interpolate(a, b, { maxSegmentLength: 1 });
+        return interpolate(a, b, { maxSegmentLength: 10 });
       },
     }
   );
@@ -52,30 +51,14 @@ function Contact() {
   };
 
   const ani = (position) => {
-    fill.set("#1e1e1e");
     stroke.set("#eee");
     animate(progress, position, {
       duration: 0.2,
       onComplete: () => {
-        fill.set("#eee");
         stroke.set("#1e1e1e");
       },
     });
   };
-
-  // useEffect(() => {
-  //   progress.set(0)
-  //   let a = animate(progress, 1, {
-  //     duration: 0.2,
-  //     onComplete: () => {
-  //       fill.set("#eee");
-  //       stroke.set("#1e1e1e");
-  //     },
-  //   });
-  //   return ()=>{
-  //     a.stop()
-  //   }
-  // }, [paths])
 
   return (
     <div className="Contact_page_ctn">
