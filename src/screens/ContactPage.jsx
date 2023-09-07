@@ -23,21 +23,21 @@ function Contact() {
   );
 
   const gmailEnter = () => {
-    if(window.screen.width > window.screen.height){
+    if (window.screen.width > window.screen.height) {
       console.log("#gmail");
       progress.set(0);
       ani(1);
     }
   };
   const linkEnter = () => {
-    if(window.screen.width > window.screen.height){
+    if (window.screen.width > window.screen.height) {
       console.log("#linkedin");
       progress.set(2);
       ani(3);
     }
   };
   const githubEnter = () => {
-    if(window.screen.width > window.screen.height){
+    if (window.screen.width > window.screen.height) {
       console.log("#github");
       progress.set(4);
       ani(5);
@@ -83,29 +83,44 @@ function Contact() {
         <div className="info_ctn">
           <p className="info_title">Hit me up!</p>
           <p className="info_text">
-            Feel free to contact me in some social media
+            Feel free to contact me in the platforms below
           </p>
-          <p
-            className="info_link"
-            onMouseEnter={githubEnter}
-            onMouseLeave={leave}
-          >
-            radul19
-          </p>
-          <p
-            className="info_link"
-            onMouseEnter={gmailEnter}
-            onMouseLeave={leave}
-          >
-            raulbritogonz@gmail.com
-          </p>
-          <p
-            className="info_link"
-            onMouseEnter={linkEnter}
-            onMouseLeave={leave}
-          >
-            raulbritocode
-          </p>
+          <div className="icon_link">
+            <div className="icon">
+              <SvgGit />
+            </div>
+            <p
+              className="info_link"
+              onMouseEnter={githubEnter}
+              onMouseLeave={leave}
+            >
+              radul19
+            </p>
+          </div>
+          <div className="icon_link">
+            <div className="icon">
+              <SvgGmail />
+            </div>
+            <p
+              className="info_link"
+              onMouseEnter={gmailEnter}
+              onMouseLeave={leave}
+            >
+              raulbritogonz@gmail.com
+            </p>
+          </div>
+          <div className="icon_link">
+            <div className="icon">
+              <SvgLinkedin />
+            </div>
+            <p
+              className="info_link"
+              onMouseEnter={linkEnter}
+              onMouseLeave={leave}
+            >
+              raulbritocode
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -114,23 +129,60 @@ function Contact() {
 
 export default Contact;
 
-/** LINKEDIN
- * <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M72.625 51.0416C72.625 71.1812 56.4375 87.4999 36.4583 87.4999C16.4792 87.4999 0.291667 71.1812 0.291667 51.0416C0.291667 30.9166 16.4792 14.5833 36.4583 14.5833C56.4375 14.5833 72.625 30.9166 72.625 51.0416ZM72.9167 116.667H0V350H72.9167V116.667ZM189.321 116.667H116.871V350H189.335V227.514C189.335 159.41 277.258 153.839 277.258 227.514V350H350V202.256C350 87.3395 219.887 91.5249 189.321 148.094V116.667Z" fill="black"/>
-</svg>
-
- */
-
-/** GMAIL
- * <svg width="350" height="249" viewBox="0 0 350 249" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M325.033 248.25H24.9667C11.1854 248.25 0 237.065 0 223.283V25.2999C0 11.5187 11.1854 0.333252 24.9667 0.333252H325.033C338.815 0.333252 350 11.5187 350 25.2999V223.283C350 237.065 338.815 248.25 325.033 248.25ZM175 159.496L38.7625 64.952L38.4708 233.667H310.946V64.952L175 159.496ZM304.34 14.9166H44.9167L175 105.756C175 105.756 266.175 41.502 304.34 14.9166Z" fill="black"/>
-</svg>
-
- */
-
-/** GITHUB
- * <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M175 0C78.3708 0 0 78.3563 0 175C0 252.321 50.1375 317.917 119.685 341.06C128.421 342.679 131.25 337.254 131.25 332.646V300.067C82.5708 310.654 72.4354 279.417 72.4354 279.417C64.4729 259.19 52.9958 253.808 52.9958 253.808C37.1146 242.944 54.2062 243.177 54.2062 243.177C71.7792 244.402 81.025 261.217 81.025 261.217C96.6292 287.963 121.96 280.233 131.95 275.756C133.51 264.454 138.046 256.725 143.063 252.365C104.198 247.917 63.3354 232.91 63.3354 165.871C63.3354 146.752 70.175 131.148 81.3604 118.898C79.5521 114.479 73.5583 96.6729 83.0667 72.5813C83.0667 72.5813 97.7667 67.8854 131.206 90.5188C145.162 86.6396 160.125 84.7 175 84.6271C189.875 84.7 204.852 86.6396 218.837 90.5188C252.248 67.8854 266.919 72.5813 266.919 72.5813C276.442 96.6875 270.448 114.494 268.64 118.898C279.869 131.148 286.65 146.767 286.65 165.871C286.65 233.085 245.715 247.888 206.748 252.219C213.019 257.644 218.75 268.29 218.75 284.623V332.646C218.75 337.298 221.55 342.767 230.431 341.046C299.921 317.873 350 252.292 350 175C350 78.3563 271.644 0 175 0Z" fill="black"/>
-</svg>
-
- */
+const SvgGit = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_419_139)">
+        <path
+          d="M16 0C7.16533 0 0 7.164 0 16C0 23.0693 4.584 29.0667 10.9427 31.1827C11.7413 31.3307 12 30.8347 12 30.4133V27.4347C7.54933 28.4027 6.62267 25.5467 6.62267 25.5467C5.89467 23.6973 4.84533 23.2053 4.84533 23.2053C3.39333 22.212 4.956 22.2333 4.956 22.2333C6.56267 22.3453 7.408 23.8827 7.408 23.8827C8.83467 26.328 11.1507 25.6213 12.064 25.212C12.2067 24.1787 12.6213 23.472 13.08 23.0733C9.52667 22.6667 5.79067 21.2947 5.79067 15.1653C5.79067 13.4173 6.416 11.9907 7.43867 10.8707C7.27333 10.4667 6.72533 8.83867 7.59467 6.636C7.59467 6.636 8.93867 6.20667 11.996 8.276C13.272 7.92133 14.64 7.744 16 7.73733C17.36 7.744 18.7293 7.92133 20.008 8.276C23.0627 6.20667 24.404 6.636 24.404 6.636C25.2747 8.84 24.7267 10.468 24.5613 10.8707C25.588 11.9907 26.208 13.4187 26.208 15.1653C26.208 21.3107 22.4653 22.664 18.9027 23.06C19.476 23.556 20 24.5293 20 26.0227V30.4133C20 30.8387 20.256 31.3387 21.068 31.1813C27.4213 29.0627 32 23.0667 32 16C32 7.164 24.836 0 16 0Z"
+          fill="#EEEEEE"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_419_139">
+          <rect width="32" height="32" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const SvgLinkedin = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.64 4.66659C6.64 6.50792 5.16 7.99992 3.33333 7.99992C1.50667 7.99992 0.0266667 6.50792 0.0266667 4.66659C0.0266667 2.82659 1.50667 1.33325 3.33333 1.33325C5.16 1.33325 6.64 2.82659 6.64 4.66659ZM6.66667 10.6666H0V31.9999H6.66667V10.6666ZM17.3093 10.6666H10.6853V31.9999H17.3107V20.8013C17.3107 14.5746 25.3493 14.0653 25.3493 20.8013V31.9999H32V18.4919C32 7.98525 20.104 8.36792 17.3093 13.5399V10.6666Z"
+        fill="#EEEEEE"
+      />
+    </svg>
+  );
+};
+const SvgGmail = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M29.7173 28.0915H2.28267C1.02267 28.0915 0 27.0688 0 25.8088V7.70747C0 6.44747 1.02267 5.4248 2.28267 5.4248H29.7173C30.9773 5.4248 32 6.44747 32 7.70747V25.8088C32 27.0688 30.9773 28.0915 29.7173 28.0915ZM16 19.9768L3.544 11.3328L3.51733 25.2953H28.4293V11.3328L16 19.9768Z"
+        fill="#EEEEEE"
+      />
+    </svg>
+  );
+};
