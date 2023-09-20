@@ -1,0 +1,124 @@
+$boxSize: calc(3.5vw + 3.5vh)
+
+.displayCtn
+    position: absolute
+    background-color: #0000008a
+    height: 100%
+    width: 100%
+    z-index: 2000
+
+
+.displayPreviews
+    top:0px
+    position: sticky
+    display: flex
+    flex-direction: column
+    height: 100vh
+    width: 100vw
+
+
+
+.dp_top
+    position: relative
+    height: 80%
+    width: 100%
+    // background-color: #ac4444
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 5vh 0px
+    box-sizing: border-box
+
+.bigImg
+    height: 100%
+
+.cross
+    padding: 6px
+    width: 32px
+    height: 32px
+    position: absolute
+    top: 1.5vw
+    right: 1.5vw
+    cursor: pointer
+    z-index: 1000
+
+.dp_bottom
+    height: 20%
+    width: 100%
+    // background-color: #6e69c2
+    padding: 0px 5vw
+    display: flex
+    // justify-content: space-between
+    align-items: center
+    box-sizing: border-box
+
+.leftArrow,.rightArrow
+    height: $boxSize
+    width: $boxSize
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    // background-color: #000
+
+.miniboxes_ctn
+    width: 70%
+    height: $boxSize
+    // background-color: #6bb65e
+    overflow: hidden
+    display: flex
+    // justify-content: center
+
+/** MOVE WITH MARGIN LEFT
+.miniboxes
+    gap: 2vw
+    display: flex
+    // background-color: red
+    height: 100%
+    // width: calc(($boxSize * 13) + ( 0 * 13 ))
+    // margin-left: -53px
+
+.minibox
+    display: flex
+    align-items: center
+    justify-content: center
+    width: $boxSize
+    cursor: pointer
+    // background-color: #191919
+    // border: 2px solid grey
+
+.minibox:nth-child(even)
+    // background-color: #3e3e3e
+
+.arrow
+    transform: scale(2)
+    transition: transform .3s
+.rightArrow .arrow
+    transform: scale(2) rotate(180deg)
+
+.arrow:hover
+    transform: scale(2.5)
+
+.rightArrow .arrow:hover
+    transform: scale(2.5) rotate(180deg)
+
+.previewImg
+    height: 100%
+    max-width: 100%
+
+@media screen and (orientation:portrait)
+    .arrow
+        transform: scale(1.2)
+        transition: transform .3s
+    .rightArrow .arrow
+        transform: scale(1.2) rotate(180deg)
+    .arrow:hover
+        transform: scale(1.2)
+
+    .rightArrow .arrow:hover
+        transform: scale(1.2) rotate(180deg)
+    .bigImg
+        // max-height: 100%
+        height: auto
+        max-width: 70vw
+

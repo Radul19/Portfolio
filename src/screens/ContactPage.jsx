@@ -24,28 +24,24 @@ function Contact() {
 
   const gmailEnter = () => {
     if (window.screen.width > window.screen.height) {
-      console.log("#gmail");
       progress.set(0);
       ani(1);
     }
   };
   const linkEnter = () => {
     if (window.screen.width > window.screen.height) {
-      console.log("#linkedin");
       progress.set(2);
       ani(3);
     }
   };
   const githubEnter = () => {
     if (window.screen.width > window.screen.height) {
-      console.log("#github");
       progress.set(4);
       ani(5);
     }
   };
 
   const leave = () => {
-    console.log("#leave");
     let aux = progress.get();
     ani(aux - 1);
   };
@@ -89,37 +85,44 @@ function Contact() {
             <div className="icon">
               <SvgGit />
             </div>
-            <p
+            <a
+              href="https://github.com/Radul19"
+              target="blank"
               className="info_link"
               onMouseEnter={githubEnter}
               onMouseLeave={leave}
             >
               radul19
-            </p>
+            </a>
           </div>
           <div className="icon_link">
             <div className="icon">
               <SvgGmail />
             </div>
-            <p
+            <a
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=radulito19@gmail.com
+            "
+              target="blank"
               className="info_link"
               onMouseEnter={gmailEnter}
               onMouseLeave={leave}
             >
               raulbritogonz@gmail.com
-            </p>
+            </a>
           </div>
           <div className="icon_link">
             <div className="icon">
               <SvgLinkedin />
             </div>
-            <p
+            <a
+              href="https://linkedin.com/in/raulbritogonz"
+              target="blank"
               className="info_link"
               onMouseEnter={linkEnter}
               onMouseLeave={leave}
             >
               raulbritocode
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -178,8 +181,8 @@ const SvgGmail = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M29.7173 28.0915H2.28267C1.02267 28.0915 0 27.0688 0 25.8088V7.70747C0 6.44747 1.02267 5.4248 2.28267 5.4248H29.7173C30.9773 5.4248 32 6.44747 32 7.70747V25.8088C32 27.0688 30.9773 28.0915 29.7173 28.0915ZM16 19.9768L3.544 11.3328L3.51733 25.2953H28.4293V11.3328L16 19.9768Z"
         fill="#EEEEEE"
       />

@@ -15,7 +15,6 @@ function PicturePage() {
   const pathLen = useMotionValue(0);
 
   const showStuff = () => {
-    console.log("#showStufs");
     animate(opacity, 1, {
       duration: 0.5,
     });

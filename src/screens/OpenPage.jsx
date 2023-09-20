@@ -46,7 +46,6 @@ function OpenPage() {
   });
   useEffect(() => {
     if (isVisible) {
-      console.log("wtf");
       progress.set(0);
       let a = animate(progress, 1, {
         duration: 1.5,
