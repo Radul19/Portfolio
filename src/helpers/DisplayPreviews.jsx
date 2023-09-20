@@ -19,29 +19,27 @@ import { enableScroll } from "./scrolls";
 
 let boxSize = window.innerWidth * 0.035 + window.innerHeight * 0.035;
 
-// const arrItem = [1, 2, 3, 4, 5, 6, 7, 8];
 
 function DisplayPreviews({ selected, setSelected, allImages }) {
   const [active, setActive] = useState(0);
   const x = useMotionValue(0);
   const opacity = useMotionValue(0);
-  const ifMore =
-    boxSize * allImages[selected].length > window.innerWidth * 0.9 * 0.7;
+
+
+  let ctnWidth = boxSize * allImages[selected].length;
+  let ctnSmall = window.innerWidth * 0.9 * 0.7;
+  let gaps = (allImages[selected].length) * window.innerWidth * 0.02;
+
+  const ifMore = (ctnWidth + gaps) > ctnSmall
 
   const moveLeft = () => {
-    console.log("#moveLeft");
     animate(x, 0, {
       duration: 1,
     });
   };
   const moveRight = () => {
-    console.log("#moveRight");
-
-    let ctnWidth = boxSize * allImages[selected].length;
-    let ctnSmall = window.innerWidth * 0.9 * 0.7;
-    let gaps = (allImages[selected].length - 1) * window.innerWidth * 0.02;
-
-    if (ctnWidth > ctnSmall) {
+    
+    if (ifMore) {
       animate(x, ctnSmall - ctnWidth - gaps, {
         duration: 1,
       });

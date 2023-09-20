@@ -13,6 +13,9 @@ import f5 from '../images/faindit5.png'
 import f6 from '../images/faindit6.png'
 import f7 from '../images/faindit7.png'
 import f8 from '../images/faindit8.png'
+import f9 from '../images/faindit9.png'
+import f10 from '../images/faindit10.png'
+import f11 from '../images/faindit11.png'
 
 import s1 from '../images/signs1.png'
 import s2 from '../images/signs2.png'
@@ -59,7 +62,7 @@ const crazyChu = [
   { bg: "#764ABC", text: "Responsive" },
 ];
 
-const fainditImages = [f1,f2,f3,f4,f5,f6,f7,f8]
+const fainditImages = [f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11]
 const signsImages = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10]
 const churroImages = [c1,c2,c3,c4,c5,c6,c7,c8]
 const allImages = [signsImages,fainditImages,churroImages]
